@@ -1,0 +1,27 @@
+{
+  "name": "top-inventorymanagement",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --env-file=main.env --watch index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/silverwolf1223/TOP-InventoryManagement.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/silverwolf1223/TOP-InventoryManagement/issues"
+  },
+  "homepage": "https://github.com/silverwolf1223/TOP-InventoryManagement#readme",
+  "description": "",
+  "dependencies": {
+    "ejs": "^5.0.2",
+    "express": "^5.2.1",
+    "express-validator": "^7.3.2",
+    "pg": "^8.20.0"
+  }
+}

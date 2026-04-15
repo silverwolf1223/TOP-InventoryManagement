@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/main.css">
+</head>
+<body>
+    <form action="/" method="GET">
+        <input type="text" name="search">
+        <input type="submit" value="search">
+    </form>
+    <ul>
+        <% rows.map((item) => { %>
+            <li><%= item.name %> | Price: <%= item.price %> | Stock: <%= item.stock%> | <%= item.type%></li>
+            <a href="/edit/<%=item.id%>"">Edit</a>
+        <% })%>
+    </ul>
+    <a href="/new">Add Inventory Item</a>
+</body>
+</html>
