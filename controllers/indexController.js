@@ -13,7 +13,7 @@ async function getNewInventory(req, res) {
 
 async function postNewInventory(req, res) {
     item = req.body;
-    db.insertinventory(item.name, item.stock, item.price, item.type);
+    await db.insertinventory(item.name, item.stock, item.price, item.type);
     res.redirect("/")
 }
 
