@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "install:prod": "npm install --omit=dev",
+    "install": "npm install --omit=dev",
     "build": "node db/populate.js",
     "start": "node index.js"
   },
