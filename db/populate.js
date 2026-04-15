@@ -1,4 +1,4 @@
-const { Client } = require('pg')
+const { Pool } = require('pg')
 
 const SQL = `
     DROP TABLE IF EXISTS inventory;
@@ -10,14 +10,14 @@ const SQL = `
 `
 
 async function main() {
-  const client = new Client({
+  const pool = new Pool({
     connectionString: process.env.DATABASE_URL,
     ssl: {
       rejectUnauthorized: false // Required for some hosted Postgres providers like Railway
     }
   });
-  await client.query(SQL);
-  await client.end();
+  await pool.query(SQL);
+  await pool.end();
   console.log("db reset");
 }
 
