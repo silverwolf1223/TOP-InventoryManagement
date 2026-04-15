@@ -11,7 +11,7 @@ const SQL = `
 
 async function main() {
   const client = new Client({
-    connectionString: "postgresql://postgres:CwZZbwqBJdoyDoAoYLjlUPuNmKrpdGSN@monorail.proxy.rlwy.net:58586/railway",
+    connectionString: process.env.DATABASE_URL,
     ssl: {
       rejectUnauthorized: false // Required for some hosted Postgres providers like Railway
     }
