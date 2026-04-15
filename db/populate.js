@@ -16,7 +16,6 @@ async function main() {
       rejectUnauthorized: false // Required for some hosted Postgres providers like Railway
     }
   });
-  await client.connect();
   await client.query(SQL);
   await client.end();
   console.log("db reset");
