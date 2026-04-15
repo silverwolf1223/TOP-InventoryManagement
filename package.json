@@ -4,8 +4,8 @@
   "main": "index.js",
   "scripts": {
     "ci": "npm ci --omit=dev",
-    "build": "node db/populate.js",
-    "start": "node index.js"
+    "start": "node index.js",
+    "build": "node db/populate.js"
   },
   "repository": {
     "type": "git",
