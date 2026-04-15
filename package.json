@@ -5,7 +5,7 @@
   "scripts": {
     "ci": "npm ci --omit=dev",
     "start": "node index.js",
-    "build": "node db/populate.js"
+    "build": "node db/populate.js --delay 10000"
   },
   "repository": {
     "type": "git",
