@@ -4,8 +4,7 @@
   "main": "index.js",
   "scripts": {
     "ci": "npm ci --omit=dev",
-    "start": "node index.js",
-    "build": "node db/populate.js --delay 10000"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
