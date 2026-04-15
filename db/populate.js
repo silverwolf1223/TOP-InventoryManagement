@@ -11,11 +11,10 @@ const SQL = `
 
 async function main() {
   const client = new Client({
-    host: process.env.HOST,
-    user: process.env.USER,
-    database: process.env.DATABASE,
-    password: process.env.PASSWORD,
-    port: 5432
+    connectionString: process.env.DATABASE_URL,
+    ssl: {
+      rejectUnauthorized: false // Required for some hosted Postgres providers like Railway
+    }
   });
   await client.connect();
   await client.query(SQL);
