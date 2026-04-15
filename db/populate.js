@@ -21,4 +21,4 @@ async function main() {
   console.log("db reset");
 }
 
-main();
+module.exports = main;
